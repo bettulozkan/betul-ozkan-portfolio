@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f2f2b0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 90px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 100; 
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #14471fe2;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f2937;
+    margin-left: 30px;
+    font-weight: 800;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #19603169;
+}
+.giris {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #f5fdf7 0%, #e8f5e9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.giris::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(78, 173, 91, 0.05);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+    z-index: 1;
+}
+
+.giris h1 {
+    font-size: 3.5rem;
+    color: #0b4412;
+    margin-top: 80px; 
+    margin-bottom: 20px;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+}
+
+
+.giris p {
+    font-size: 1.25rem;
+    color: #444; 
+    max-width: 650px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    z-index: 2;
+}
+
+.giris h1 span {
+    color: #0b4412; 
+}
+
+.giris-link a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #0f7540;
+    padding: 10px 20px;
+    border: 1.5px solid #0f7540; 
+    border-radius: 6px;
+    outline: none;
+}
+.giris-link a:hover{
+  background-color: #0b4412;
+  color: white;
+}
+
+section {
+    padding: 100px 80px;
+    min-height: 50vh;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#hakkimda {
+  padding: 100px 10%;
+  background-color: white;
+  text-align: center;
+}
+
+.hakkimda-konteyner {
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+.hakkimda-konteyner h2 {
+  font-size: 2.5rem;
+  color: #0b4412;
+  margin-bottom: 20px;
+}
+
+.hakkimda-metin p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+  text-align: justify; 
+  text-align-last: center; 
+}
+
+.yetenek-bolumu h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.yetenek-listesi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.yetenek-listesi span {
+  background-color: #f0f4f0; 
+  color: #0b4412;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #0b441222; 
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.yetenek-listesi span:hover {
+  background-color: #0b4412;
+  color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.projeler-bolumu {
+    padding: 100px 5%;
+    background-color: #ffffff; 
+}
+
+.projeler-kapsayici {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.proje-kart {
+    background: #ffffff;
+    width: 300px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04); 
+    border: 1px solid #f0f0f0;
+}
+
+.proje-kart:hover {
+    box-shadow: 0 30px 60px rgba(11, 68, 18, 0.08);
+    border-color: #e0f2e3;
+}
+
+.proje-kart img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.7;
+    padding: 20px;
+}
+
+.proje-kart:hover img {
+    opacity: 2;
+}
+
+.proje-detay {
+    padding: 30px;
+    text-align: center;
+}
+
+.proje-detay h3 {
+    font-size: 1.6rem;
+    color: #0b4412;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.proje-detay p {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.proje-linkler a {
+    text-decoration: none;
+    color: #0b4412;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    border-bottom: 2px solid #0b441233;
+}
+
+.proje-linkler a:hover {
+    border-bottom-color: #0b4412;
+}
+
+#iletisim {
+  padding: 80px 5%;
+  text-align: center;
+  background-color: #fcfcfc;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  color: #0b4412;
+  margin-bottom: 10px;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  text-decoration: none;
+  color: #333;
+  background: white;
+  padding: 25px;
+  width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.contact-card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-card h3 {
+  margin-bottom: 15px;
+  color: #0b4412;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.contact-card span {
+  font-weight: bold;
+  color: #0b4412;
+  font-size: 14px;
+}
+
+
+.contact-card:hover {
+  box-shadow: 0 20px 40px rgba(11, 68, 18, 0.1);
+  border-color: #0b4412;
+}
+
+  .site-footer {
+    background-color: #14471fe2;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .footer-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  .social-links a:hover {
+    color: #5b9a709c;
+  }
+  
+ 
+  
+ 
